@@ -1,0 +1,78 @@
+@use "global" as *;
+
+.header {
+    height: rem(95);
+    color: $white;
+    transition: all 0.7s ease 0s;
+    @include mq("md") {
+        height: rem(74);
+    }
+}
+
+.header__inner.inner {
+    @include mq("md") {
+        padding-right: rem(9);
+    }
+}
+
+.header__inner {
+    height: inherit;
+}
+
+.header__content {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__title {
+    height: inherit;
+    font-size: rem(26);
+    font-style: italic;
+    font-weight: $bold;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+}
+
+.header__title a {
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.header__nav {
+    height: inherit;
+    font-style: italic;
+}
+
+.header__nav-items {
+    height: inherit;
+    @include mq("md") {
+        display: flex;
+    }
+}
+
+.header__nav-item {
+    height: inherit;
+}
+
+.header__nav-item a {
+    padding: 0 rem(15);
+    height: inherit;
+    display: flex;
+    align-items: center;
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: 1;
+    color: #ffffff;
+    text-transform: capitalize;
+    letter-spacing: 0.05em;
+}
+
+/* スクロールしたらヘッダーメニューのフォントカラー変更 */
+.header.headerColorScroll {
+    background-color: $navy;
+    transition: all 0.5s ease 0s;
+}

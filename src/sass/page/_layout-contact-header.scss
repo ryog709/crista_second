@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.layout-contact-header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    @include mq("md") {
+        top: rem(22);
+    }
+}

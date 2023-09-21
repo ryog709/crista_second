@@ -1,0 +1,80 @@
+@use "global" as *;
+
+.top-mv {
+    min-height: rem(350);
+    height: 100vh;
+    position: relative;
+    @include mq("md") {
+        min-height: rem(400);
+    }
+}
+
+.top-mv__inner {
+    height: inherit;
+    min-height: inherit;
+}
+
+.top-mv__swiper,
+.top-mv__swiper-wrapper,
+.top-mv__swiper-slide01,
+.top-mv__swiper-slide02,
+.top-mv__swiper-slide03 {
+    height: inherit;
+    min-height: inherit;
+}
+
+.top-mv__swiper-slide01,
+.top-mv__swiper-slide02,
+.top-mv__swiper-slide03 {
+    background-position: center center;
+    background-size: cover;
+}
+
+.top-mv__swiper-slide01 {
+    background-image: url(../images/common/top-mv01.webp);
+}
+
+.top-mv__swiper-slide02 {
+    background-image: url(../images/common/top-mv02.webp);
+}
+
+.top-mv__swiper-slide03 {
+    background-image: url(../images/common/top-mv03.webp);
+}
+
+.top-mv__title-content {
+    color: $white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    @include mq("md") {
+        left: calc(49% - min(18vw, rem(250)));
+        top: 66%;
+        width: fit-content;
+    }
+}
+
+.top-mv__title-en {
+    font-size: rem(37);
+    font-weight: $bold;
+    letter-spacing: 0.05em;
+    @include mq("md") {
+        font-size: rem(70);
+    }
+}
+
+.top-mv__title-jp {
+    font-size: rem(30);
+    font-weight: $bold;
+    letter-spacing: 0.05em;
+    margin-top: rem(47);
+    line-height: calc(50 / 30);
+    @include mq("md") {
+        font-size: rem(40);
+        margin-top: rem(11);
+    }
+}

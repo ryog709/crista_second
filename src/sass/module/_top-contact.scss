@@ -1,0 +1,59 @@
+@use "global" as *;
+
+.top-contact {
+    background-image: url(../images/common/top-contact-bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: rem(100);
+    padding-bottom: rem(62);
+    @include mq("md") {
+        padding-top: rem(110);
+        padding-bottom: rem(112);
+    }
+}
+
+.top-contact__title {
+    display: block;
+    text-align: right;
+    margin-top: rem(7);
+    @include mq("md") {
+        margin-top: rem(10);
+    }
+}
+
+.top-contact__text {
+    color: $white;
+    margin-top: rem(84);
+    text-align: center;
+    font-size: rem(20);
+    font-weight: $bold;
+    line-height: calc(24 / 20);
+    letter-spacing: 0.05em;
+    @include mq("md") {
+        margin-top: rem(92);
+    }
+}
+
+.top-contact__button {
+    text-align: center;
+    margin-top: rem(40);
+    @include mq("md") {
+        margin-top: rem(50);
+    }
+}
+
+.top-contact__bg-title {
+    margin-top: rem(40);
+    @include mq("md") {
+        margin-top: rem(60);
+    }
+}
+
+.top-contact__bg-title.section-bg-title {
+    text-transform: initial;
+}
+
+.top-contact__bg-title.section-bg-title::first-letter {
+    text-transform: capitalize;
+}

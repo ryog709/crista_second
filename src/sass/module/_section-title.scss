@@ -1,0 +1,42 @@
+@use "global" as *;
+
+.section-title {
+    font-style: italic;
+    font-weight: $bold;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: rem(30);
+    line-height: 1;
+    @include mq("md") {
+        font-size: rem(60);
+    }
+}
+
+.section-title.section-title--large {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.section-title:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: rem(5);
+    background-color: $navy;
+    margin-left: rem(30);
+    width: rem(100);
+    @include mq("md") {
+        width: rem(200);
+        margin-left: 0.5em;
+    }
+}
+
+.section-title.section-title--white {
+    color: $white;
+    text-transform: capitalize;
+}
+
+.section-title.section-title--white:after {
+    background-color: $white;
+}

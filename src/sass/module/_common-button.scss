@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.common-button {
+    background-color: $yellow;
+    border-radius: rem(30);
+    line-height: 1;
+    padding: rem(21.5) 0;
+    letter-spacing: 0.05em;
+    font-size: rem(16);
+    font-weight: $bold;
+    display: inline-block;
+    text-align: center;
+    max-width: rem(235);
+    width: 100%;
+}

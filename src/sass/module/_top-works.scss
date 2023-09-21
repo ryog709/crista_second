@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.top-works {
+    background-image: url(../images/common/top-works-bg.webp);
+    background-size: cover;
+    background-position: center center;
+}
+
+.top-works__title {
+    text-align: right;
+    display: block;
+    margin-top: rem(6);
+    @include mq("md") {
+        margin-top: rem(10);
+    }
+}
+
+.top-works__button {
+    text-align: center;
+    margin-top: rem(76);
+    @include mq("md") {
+        margin-top: rem(80);
+    }
+}
+
+.top-works__bg-title {
+    margin-top: rem(47);
+    @include mq("md") {
+        margin-top: rem(84);
+    }
+}

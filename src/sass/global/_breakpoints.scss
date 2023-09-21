@@ -83,3 +83,10 @@ $mediaquerys: (
     }
   }
 }
+
+.md-show {
+  display: none;
+  @include mq("md") {
+    display: inline-block;
+  }
+}
