@@ -1,7 +1,7 @@
 @use "global" as *;
 
-.contact-mv {
-    background-image: url(../images/common/contact-mv.webp);
+.sub-mv {
+    background-image: url(../images/common/sub-mv.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -12,7 +12,7 @@
     }
 }
 
-.contact-mv__inner.inner {
+.sub-mv__inner.inner {
     @include mq("md") {
         max-width: rem(1400);
         width: 100%;
@@ -20,7 +20,7 @@
     }
 }
 
-.contact-mv__title {
+.sub-mv__title {
     font-size: rem(30);
     color: $white;
     font-weight: $bold;
@@ -35,17 +35,17 @@
     }
 }
 
-.contact-mv__bg-title {
+.sub-mv__bg-title {
     margin-top: rem(40);
     @include mq("md") {
-      margin-top: rem(12);
+        margin-top: rem(12);
     }
 }
 
-.contact-mv__bg-title.section-bg-title {
+.sub-mv__bg-title.section-bg-title {
     text-transform: initial;
 }
 
-.contact-mv__bg-title.section-bg-title::first-letter {
+.sub-mv__bg-title.section-bg-title::first-letter {
     text-transform: capitalize;
 }

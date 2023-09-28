@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .contact {
+    margin-top: rem(97);
 }
 
 .contact__inner.inner {
@@ -9,9 +10,6 @@
     margin-inline: auto;
 }
 
-.contact__form {
-    margin-top: rem(97);
-}
 
 .contact__title {
     color: $black;
@@ -161,6 +159,7 @@
     max-width: rem(235);
     width: 100%;
     box-shadow: 0 0 rem(6) 0 #1b1310;
+    transition: all 0.3s ease 0s;
 }
 
 .contact__button:hover {

@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.top-service-grid {
+.top-service-list {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-row-gap: rem(30);
@@ -18,7 +18,7 @@
     }
 }
 
-.top-service-grid__item a {
+.top-service-list__item a {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -26,22 +26,22 @@
     grid-row-gap: 0px;
 }
 
-.top-service-grid__item-img img {
+.top-service-list__item-img img {
     aspect-ratio: 375/250;
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
 
-.top-service-grid__item-img {
+.top-service-list__item-img {
     grid-area: 1 / 1 / 2 / 2;
 }
 
-.top-service-grid__item a {
+.top-service-list__item a {
     position: relative;
 }
 
-.top-service-grid__item a::before {
+.top-service-list__item a::before {
     position: absolute;
     content: "";
     background: rgba(23, 23, 23, 0.3);
@@ -53,16 +53,16 @@
     transition: 0.5s;
 }
 
-.top-service-grid__item a:hover {
+.top-service-list__item a:hover {
     opacity: 1;
 }
 
-.top-service-grid__item a:hover::before {
+.top-service-list__item a:hover::before {
     background: rgba(23, 23, 23, 0.7);
     transition: 0.5s;
 }
 
-.top-service-grid__item-text {
+.top-service-list__item-text {
     position: relative;
     display: grid;
     place-content: center;

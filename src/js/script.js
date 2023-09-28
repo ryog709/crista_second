@@ -30,21 +30,21 @@ jQuery(function ($) {
         $(window).on("scroll", function () {
             var sliderHeight = $(".js-top-mv").height();
             if (sliderHeight - 30 < $(this).scrollTop()) {
-                $(".js-header").addClass("headerColorScroll");
+                $(".js-header").addClass("is-headerColorScroll");
             } else {
-                $(".js-header").removeClass("headerColorScroll");
+                $(".js-header").removeClass("is-headerColorScroll");
             }
         });
     });
 
-    // const swiper = new Swiper(".js-swiper", {
-    //     loop: true, // ループさせる
-    //     effect: "fade", // フェードのエフェクト
-    //     autoplay: {
-    //         delay: 2000, // ４秒後に次の画像へ
-    //         disableOnInteraction: false, // ユーザー操作後に自動再生を再開する
-    //     },
-    //     speed: 2000, // ２秒かけながら次の画像へ移動
-    //     allowTouchMove: false, // マウスでのスワイプを禁止
-    // });
+    const swiper = new Swiper(".js-swiper", {
+        loop: true, // ループさせる
+        effect: "fade", // フェードのエフェクト
+        autoplay: {
+            delay: 2000, // ４秒後に次の画像へ
+            disableOnInteraction: false, // ユーザー操作後に自動再生を再開する
+        },
+        speed: 2000, // ２秒かけながら次の画像へ移動
+        allowTouchMove: false, // マウスでのスワイプを禁止
+    });
 });
